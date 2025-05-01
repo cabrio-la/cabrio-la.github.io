@@ -234,4 +234,67 @@
         margin-bottom: 1em;
         padding: 1.5em;
     }
+}
+
+/* Image Standardization */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Product Images */
+.product-image {
+    max-width: 100px;
+    max-height: 100px;
+    width: 10vh;
+    height: 10vh;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Gallery Images */
+.gallery-image {
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Logo Images */
+.logo-image {
+    max-width: 200px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Responsive Image Adjustments */
+@media screen and (max-width: 736px) {
+    .product-image {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .gallery-image {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+    .logo-image {
+        max-width: 150px;
+        max-height: 75px;
+    }
 } 
